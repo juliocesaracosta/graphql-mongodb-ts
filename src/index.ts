@@ -34,7 +34,7 @@ const server = new ApolloServer({
 // instance before passing the instance to `expressMiddleware`
 await server.start();
 
-app.use("/graphql", cors(), json(), expressMiddleware(server));
+app.use("/", cors(), json(), expressMiddleware(server));
 
 // start the Express server
 app.listen(PORT, () => {
