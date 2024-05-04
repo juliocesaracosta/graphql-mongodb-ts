@@ -3,7 +3,7 @@ dotenv.config()
 
 import { MongoClient } from "mongodb";
 
-const connectionString = process.env.ATLAS_URI || "";
+const connectionString = process.env.ATLAS_URI || `mongodb+srv://culiacan:1234-@cluster0.2xgtfpu.mongodb.net/prueba?retryWrites=true&w=majority&appName=Cluster0`;
 
 const client = new MongoClient(connectionString);
 
